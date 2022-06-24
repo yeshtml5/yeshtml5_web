@@ -10,8 +10,11 @@
 
  # Modules
  ```
-  //Navigation
-  yarn add @react-navigation/native
+ // 스타일링
+yarn add react-router-dom
+yarn add node-sass
+
+
 
 
  ```
