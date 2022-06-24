@@ -22,6 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "clean:node": "sudo rm -rf ./package-lock.json && sudo rm -rf ./node_modules && sudo yarn && sudo chmod -R 777 ./node_modules"
   },
   "eslintConfig": {
@@ -43,6 +44,13 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.18.0"
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "2.7.1",
+    "prettier-eslint": "^15.0.1"
   }
 }
