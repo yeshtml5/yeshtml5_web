@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './screens/app'
+// styles
+import './styles/common.scss'
+import './styles/layout.scss'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(

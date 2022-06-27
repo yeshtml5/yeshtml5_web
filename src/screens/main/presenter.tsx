@@ -5,7 +5,6 @@
  */
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {debug} from '../../lib/util'
 
 export default function Presenter() {
   // Icon
@@ -24,6 +23,7 @@ export default function Presenter() {
         <code>src/App.tsx</code> and save to reload.
       </p>
       <Link to="/test">test</Link>
+      <p className=".test">dzfkldsfljdsjl</p>
     </div>
   )
 }
