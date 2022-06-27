@@ -19,10 +19,13 @@ module.exports = {
   "plugins": [
     "react",
     "@typescript-eslint",
-    'react-hooks', '@typescript-eslint', 'prettier'
+    'react-hooks',
+    '@typescript-eslint'
   ],
   "rules": {
-    'prettier/prettier': 'error',
+    'react-hooks/exhaustive-deps': 0, // <--- THIS IS THE NEW RULE
+    'no-shadow': 'off',
+    'no-catch-shadow': 'off',
   },
   "settings": {
     react: {
