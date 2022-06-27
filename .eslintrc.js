@@ -1,33 +1,27 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es2021": true
+  env: {
+    browser: true,
+    es2021: true,
   },
-  "extends": [
-    'airbnb', // or airbnb-base
+  extends: [
+    'plugin:prettier/recommended',
     'plugin:jsx-a11y/recommended', // 설치 한경우
     'plugin:import/errors', // 설치한 경우
     'plugin:import/warnings', // 설치한 경우
-    'plugin:prettier/recommended',
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended"
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    'react-hooks',
-    '@typescript-eslint'
-  ],
-  "rules": {
+  plugins: ['react', '@typescript-eslint', 'react-hooks', '@typescript-eslint'],
+  rules: {
     'linebreak-style': 0,
     'import/prefer-default-export': 0,
     'import/extensions': 0,
@@ -38,14 +32,11 @@ module.exports = {
     'no-shadow': 0,
     'no-restricted-exports': 0, // export {default} from './container'
     'react/prop-types': 0,
-    'react/jsx-filename-extension': [
-      2,
-      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
-    ],
+    'react/jsx-filename-extension': [2, {extensions: ['.js', '.jsx', '.ts', '.tsx']}],
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
   },
-  "settings": {
+  settings: {
     react: {
       version: 'detect',
     },
