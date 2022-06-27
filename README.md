@@ -18,6 +18,8 @@ yarn add -D eslint
 npm install prettier --save-dev --save-exact
 npm install eslint-plugin-prettier eslint-config-prettier --save-dev
 npm install eslint --save-dev
+// Redux Toolkit
+yarn add @reduxjs/toolkit
 
  ```
 
