@@ -14,7 +14,7 @@ export default function Presenter() {
       <p>
         <code>src/App.tsx</code> and save to reload.
       </p>
-      <Link to={'/test'}>test</Link>
+      <Link to="/test">test</Link>
     </div>
   )
 }

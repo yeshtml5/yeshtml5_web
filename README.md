@@ -17,7 +17,6 @@ yarn add node-sass
 yarn add -D eslint
 npm install prettier --save-dev --save-exact
 npm install eslint-plugin-prettier eslint-config-prettier --save-dev
-
 npm install eslint --save-dev
 
  ```
@@ -25,8 +24,9 @@ npm install eslint --save-dev
  # ESLINT
  ```
  // ESLint 설정
-
  npx eslint --init
+ npm i -D eslint-config-airbnb
+ npm i -D eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-prettier eslint-config-prettier
 
 ✔ How would you like to use ESLint? · problems
 ✔ What type of modules does your project use? · esm

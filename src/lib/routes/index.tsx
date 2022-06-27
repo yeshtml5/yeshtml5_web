@@ -6,7 +6,7 @@ import {Route, Routes, HashRouter} from 'react-router-dom'
 import * as Pages from '../../screens'
 
 function Router() {
-  //initalize
+  // initalize
   return (
     <HashRouter basename="/">
       <Routes>
