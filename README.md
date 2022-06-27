@@ -18,26 +18,22 @@ yarn add -D eslint
 npm install prettier --save-dev --save-exact
 npm install eslint-plugin-prettier eslint-config-prettier --save-dev
 
+npm install eslint --save-dev
+
  ```
 
  # ESLINT
  ```
-How would you like to use ESLint?
-- To check syntax, find problems, and enforce code style
-What type of modules does your project use?
-- Javascript modules (import/export)
-Which framework does yout project use?
-- React
-Does your project use Typescript?
-- No
-How would you like to define a style for your project?
-- Use a popular style guide
-Where does yout code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)
-- Browser, Node 둘 다 선택(a 를 누르면 둘 다 선택됩니다.)
-Which style guide do you want to follow?
-- Airbnb: https://github.com/airbnb/javascript
-What format do you want your config file to be in?
-- JSON
-Would you like to install them now with npm?
-- Yes
+ // ESLint 설정
+
+ npx eslint --init
+
+✔ How would you like to use ESLint? · problems
+✔ What type of modules does your project use? · esm
+✔ Which framework does your project use? · react
+✔ Does your project use TypeScript? · No / Yes
+✔ Where does your code run? · browser
+✔ What format do you want your config file to be in? · JavaScript
+✔ Would you like to install them now? · No / Yes
+✔ Which package manager do you want to use? · yarn
  ```

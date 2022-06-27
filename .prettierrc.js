@@ -1,8 +1,12 @@
 module.exports = {
-  endOfLine: "lf",
-  tabWidth: 4,
   semi: false,
-  singleQuote: false,
-  trailingComma: "all",
-  printWidth: 120,
+  tabWidth: 2,
+  printWidth: 200,
+  proseWrap: 'preserve',
+  singleQuote: true,
+  trailingComma: 'all',
+  bracketSpacing: false,
+  bracketSameLine: true,
+  'prettier.eslintIntegration': true,
+  arrowParens: 'avoid',
 };
