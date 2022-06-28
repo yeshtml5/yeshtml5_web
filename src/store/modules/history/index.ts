@@ -1,18 +1,21 @@
 // historyStore.ts
 
 import {createSlice} from '@reduxjs/toolkit'
+import {dispatchType, stateType} from 'store/type'
 
 // state 타입 지정
 interface State {
   title: string
   month: string
   loading: boolean
+  data: object
 }
 
 const initialState: State = {
   title: '리덕스 툴킷!!',
   month: '6월',
   loading: false,
+  data: {},
 }
 
 const historySlice = createSlice({
@@ -20,12 +23,13 @@ const historySlice = createSlice({
   initialState, // 리듀서에서 사용되는 initialState
   reducers: {
     // 리듀서
-    setTitle(state, action) {
+    setTitle(state: stateType, action: dispatchType) {
       state.loading = true
+      alert(JSON.stringify(action, null, 1))
       state.title = action.payload // immer가 내장 되어있어 알아서 불변성을 지켜준다.
     },
-    setMonth(state, action) {
-      state.month = action.payload
+    setData(state: stateType, action: dispatchType) {
+      state.data = action.payload
     },
     setOpen(state) {
       state.loading = false
@@ -34,4 +38,4 @@ const historySlice = createSlice({
 })
 //*-----------------------------------------
 export default historySlice.reducer
-export const {setTitle, setMonth} = historySlice.actions
+export const {setTitle, setData} = historySlice.actions

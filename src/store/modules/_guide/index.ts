@@ -1,37 +1,29 @@
-// historyStore.ts
-
+/**
+ * @name Guide
+ */
 import {createSlice} from '@reduxjs/toolkit'
+import {dispatchType, stateType} from 'store/type'
 
-// state 타입 지정
-interface State {
+type StateType = {
   title: string
-  month: string
-  loading: boolean
+  loading?: boolean
+  fetch_data?: any //-----------fetched
+  [key: string]: any
 }
-
-const initialState: State = {
-  title: '리덕스 툴킷!!',
-  month: '6월',
-  loading: false,
+//*-----------------------------------------
+const initialState: StateType = {
+  title: 'title_init',
 }
-
-const historySlice = createSlice({
-  name: 'history', // 액션타입의 이름이 중복되는것을 막기위한 네임값
-  initialState, // 리듀서에서 사용되는 initialState
+const guideSlice = createSlice({
+  name: 'guide', //---------------- 네임스페이스
+  initialState, //----------------- 초기값
   reducers: {
-    // 리듀서
-    setTitle(state, action) {
-      state.loading = true
-      state.title = action.payload // immer가 내장 되어있어 알아서 불변성을 지켜준다.
-    },
-    setMonth(state, action) {
-      state.month = action.payload
-    },
-    setOpen(state) {
+    setFetch(state: stateType, action: dispatchType) {
       state.loading = false
+      state.fetch_data = action.payload
     },
   },
 })
 //*-----------------------------------------
-export default historySlice.reducer
-export const {setTitle, setMonth} = historySlice.actions
+export default guideSlice.reducer
+export const {setFetch} = guideSlice.actions
