@@ -20,6 +20,7 @@ npm install eslint-plugin-prettier eslint-config-prettier --save-dev
 npm install eslint --save-dev
 // Redux Toolkit
 yarn add @reduxjs/toolkit
+yarn add redux react-redux redux-devtools-extension redux-logger
 
  ```
 

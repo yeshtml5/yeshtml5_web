@@ -5,8 +5,14 @@
  */
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {useSelector, useDispatch} from 'react-redux'
+import {debug} from '../../lib/util'
 
 export default function Presenter() {
+  // hooks
+  const dispatch = useDispatch()
+  const test1 = useSelector((state: any) => state.counter)
+  console.log(test1)
   // Icon
   // hooks
   return (
@@ -14,11 +20,7 @@ export default function Presenter() {
       <h1>
         <a href="https://redux-toolkit.js.org/">https://redux-toolkit.js.org</a>{' '}
       </h1>
-      <h1>
-        <a href="https://velog.io/@junghyeonsu/React-create-react-app-Typescript-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC">
-          https://velog.io/@junghyeonsu/React-create-react-app-Typescript-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC
-        </a>
-      </h1>
+      {debug(test1)}
       <p>
         <code>src/App.tsx</code> and save to reload.
       </p>
