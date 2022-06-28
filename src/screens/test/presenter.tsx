@@ -11,7 +11,7 @@ export default function Presenter() {
   // hooks
   return (
     <div className="App">
-     <Link to={'/'}>HOME</Link>
+      <Link to="/">HOME</Link>
     </div>
   )
 }
