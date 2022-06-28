@@ -32,6 +32,6 @@ const historySlice = createSlice({
     },
   },
 })
-
+//*-----------------------------------------
 export default historySlice.reducer
 export const {setTitle, setMonth} = historySlice.actions

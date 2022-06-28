@@ -19,14 +19,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "." /* Base directory to resolve non-absolute module names. */,
+    "baseUrl": "src" /* 필수설정 */,
     "paths": {
-      "@lib/*": ["lib/*"],
-      "@components/*": ["components/*"],
-      "@screens/*": ["screens/*"]
     },
   },
-  "alias": { "src": "./src" },
-  "include": [ "src" , "index.tsx" ],
+  //  "alias": { "src": "./src" },
+  "include": ["src" , "index.tsx" ],
   "exclude": ["node_modules/**/*", "src/__tests__/*", "__generated__/*"]
 }
