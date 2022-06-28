@@ -33,7 +33,7 @@ export default function Presenter() {
         onClick={() => {
           dispatch(setData({ss: 'as', title: 'fsd'}))
         }}>
-        버튼2222
+        SCSS 린트적용
       </button>
       <p>
         <code>src/App.tsx</code> and save to reload.

@@ -16,7 +16,7 @@ export default function Presenter() {
       {/* {debug(fetched)} */}
       {fetch_data?.map((item: any, index: number) => {
         return (
-          <div style={{marginBottom: 10, color: 'black'}} key={`${item}_${index}`}>
+          <div className="item" style={{marginBottom: 10, color: 'black'}} key={`${item}_${index}`}>
             <span>{index}</span>
             <span>{item?.title}</span>
           </div>

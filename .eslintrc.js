@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    node: true,
   },
   extends: [
     'plugin:prettier/recommended',
@@ -36,6 +37,7 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
     'import/no-named-as-default': 0,
+    '@typescript-eslint/no-explicit-any': 0, // typescript any설정
   },
   settings: {
     react: {
