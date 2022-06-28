@@ -6,9 +6,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
-import {debug} from '../../lib/util'
 import {RootState} from '../../store'
-import {setTitle} from '../../store/modules/history'
+import {setTitle} from 'src/store/modules/history'
+// import {debug} from '@lib/util'
 
 export default function Presenter() {
   // hooks
@@ -22,7 +22,7 @@ export default function Presenter() {
       <h1>
         <a href="https://redux-toolkit.js.org/">https://redux-toolkit.js.org</a>{' '}
       </h1>
-      {debug(title)}
+      {/* {debug(title)} */}
       <button
         onClick={() => {
           dispatch(setTitle('리덕스 툴킷 너무 재밌어!'))
