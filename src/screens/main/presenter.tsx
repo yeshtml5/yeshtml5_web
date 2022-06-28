@@ -25,7 +25,7 @@ export default function Presenter() {
       {debug(title)}
       <button
         onClick={() => {
-          dispatch(setTitle('리덕스 툴킷 너무 재밌어!'))
+          dispatch(setTitle('리덕스 툴킷 !'))
         }}>
         버튼
       </button>
