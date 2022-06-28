@@ -7,12 +7,16 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 import {debug} from '../../lib/util'
+import {increseCount} from '../../store/modules/counter'
 
 export default function Presenter() {
   // hooks
   const dispatch = useDispatch()
-  const test1 = useSelector((state: any) => state.counter)
-  console.log(test1)
+  const count = useSelector((state: any) => state.counter)
+
+  const increase = () => {
+    dispatch(increseCount(count))
+  }
   // Icon
   // hooks
   return (
@@ -20,7 +24,8 @@ export default function Presenter() {
       <h1>
         <a href="https://redux-toolkit.js.org/">https://redux-toolkit.js.org</a>{' '}
       </h1>
-      {debug(test1)}
+      {debug(count)}
+      <button onClick={increase}>버튼</button>
       <p>
         <code>src/App.tsx</code> and save to reload.
       </p>

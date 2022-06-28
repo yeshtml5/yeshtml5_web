@@ -4,7 +4,7 @@
 // 액션이름 앞에 파일 이름을 넣습니다.
 export const INCRESE = 'COUNT/INCRESE'
 
-export const increseCount = (count: number) => ({type: INCRESE, count})
+export const increseCount = (count: any) => ({type: INCRESE, count})
 
 const initalState = {
   count: 0,
@@ -16,7 +16,7 @@ const counter = (state = initalState, action: any) => {
     case INCRESE:
       return {
         ...state,
-        count: action.count,
+        count: state.count + 1,
       }
 
     // default를 쓰지 않으면 맨처음 state에 count값이 undefined가 나옵니다 꼭! default문을 넣으세요
