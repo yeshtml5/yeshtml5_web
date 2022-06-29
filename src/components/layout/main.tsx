@@ -32,5 +32,6 @@ const Main = styled.main`
   flex-direction: row;
   //content
   div.content {
+    flex: 1;
   }
 `
