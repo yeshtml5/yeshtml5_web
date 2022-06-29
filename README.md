@@ -21,7 +21,6 @@ npm install eslint --save-dev
 // Redux Toolkit
 yarn add @reduxjs/toolkit
 yarn add redux react-redux redux-devtools-extension redux-logger
-
  ```
 
  # ESLINT
@@ -40,3 +39,15 @@ yarn add redux react-redux redux-devtools-extension redux-logger
 ✔ Would you like to install them now? · No / Yes
 ✔ Which package manager do you want to use? · yarn
  ```
+
+# styled-components
+```
+yarn add styled-components
+yarn add -D @types/styled-components
+
+// packages.json 추가
+"resolutions": {
+  "styled-components": "^5"
+}
+
+```

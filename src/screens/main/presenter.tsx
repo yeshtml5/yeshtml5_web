@@ -6,43 +6,23 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
-import {debug} from 'lib/util/index'
+import {debug} from 'lib'
 import {stateType} from 'store/type'
 import {setTitle, setData} from 'store/modules/history'
+import {App} from 'components/layout'
 
 export default function Presenter() {
   // hooks
   const {data} = useSelector((state: stateType) => state.history)
   const dispatch = useDispatch()
-
   // Icon
   // hooks
   return (
-    <div className="App">
-      <h1>
-        <a href="https://redux-toolkit.js.org/">https://redux-toolkit.js.org</a>{' '}
-      </h1>
-      {debug(data)}
-      <button
-        onClick={() => {
-          dispatch(setTitle('리덕스 툴킷 !'))
-        }}>
-        버튼
-      </button>
-      <button
-        onClick={() => {
-          dispatch(setData({ss: 'as', title: 'fsd'}))
-        }}>
-        SCSS 린트적용
-      </button>
-      <p>
-        <code>src/App.tsx</code> and save to reload.
-      </p>
+    <App>
       <Link to="/test">test</Link>
       <Link to="/guide">가이드</Link>
-
       <p className=".test">dzfkldsfljdsjl</p>
-    </div>
+    </App>
   )
 }
 /**
