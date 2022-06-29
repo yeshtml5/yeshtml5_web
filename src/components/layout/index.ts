@@ -1,2 +1,3 @@
 /*===================================================================[Screens] */
-export {default as App} from './app'
+export {default as Main} from './main'
+export {default as Gnb} from './gnb'

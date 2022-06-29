@@ -5,17 +5,20 @@
  */
 import React from 'react'
 import styled from 'styled-components'
+import {Gnb} from '.'
+// contents
 
 type Props = {
   children?: JSX.Element | JSX.Element[] | undefined
 }
-export default function App({children}: Props) {
+export default function Layout({children}: Props) {
   // Icon
   return (
-    <div className="App">
-      <Title>dsfds</Title>
-      {children}
-    </div>
+    <Main>
+      {/* GNB */}
+      <Gnb />
+      <div className="content">{children}</div>
+    </Main>
   )
 }
 /**
@@ -24,8 +27,10 @@ npx eslint --init
 
 ------------------------------------------------
  */
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
+const Main = styled.main`
+  display: flex;
+  flex-direction: row;
+  //content
+  div.content {
+  }
 `

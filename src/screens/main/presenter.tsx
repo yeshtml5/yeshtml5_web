@@ -9,7 +9,7 @@ import {useSelector, useDispatch} from 'react-redux'
 import {debug} from 'lib'
 import {stateType} from 'store/type'
 import {setTitle, setData} from 'store/modules/history'
-import {App} from 'components/layout'
+import {Main} from 'components/layout'
 
 export default function Presenter() {
   // hooks
@@ -18,11 +18,11 @@ export default function Presenter() {
   // Icon
   // hooks
   return (
-    <App>
+    <Main>
       <Link to="/test">test</Link>
       <Link to="/guide">가이드</Link>
       <p className=".test">dzfkldsfljdsjl</p>
-    </App>
+    </Main>
   )
 }
 /**
