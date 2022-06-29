@@ -10,7 +10,9 @@ function Router() {
   return (
     <HashRouter basename="/">
       <Routes>
+        {/* common */}
         <Route path="/" element={<Pages.Main />} />
+        <Route path="/guide" element={<Pages.Guide />} />
         <Route path="/test" element={<Pages.Test />} />
 
         {/* <Route exact path="/login" component={Pages.Login} />

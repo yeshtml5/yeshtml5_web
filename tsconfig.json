@@ -18,9 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src" /* 필수설정 */,
+    "paths": {
+    },
   },
-  "include": [
-    "src"
-  ]
+  //  "alias": { "src": "./src" },
+  "include": ["src" , "index.tsx" ],
+  "exclude": ["node_modules/**/*", "src/__tests__/*", "__generated__/*"]
 }
