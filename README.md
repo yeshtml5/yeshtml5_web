@@ -27,8 +27,7 @@ yarn add redux react-redux redux-devtools-extension redux-logger
 # ESLINT
 
 ```
-// ESLint 설정
-// https://kimdabin.tistory.com/entry/Reactjs-ESLint%EC%99%80-Prettier%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-React-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-VSCode
+
 npx eslint --init
 
 ✔ How would you like to use ESLint? · problems
@@ -53,3 +52,8 @@ yarn add -D @types/styled-components
 }
 
 ```
+
+# 참고
+
+- ESLint 설정
+- https://kimdabin.tistory.com/entry/Reactjs-ESLint%EC%99%80-Prettier%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-React-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-VSCode
