@@ -7,6 +7,7 @@ import {dispatchType, stateType} from 'store/type'
 type StateType = {
   title: string
   loading?: boolean
+  select?: number
   fetch_data?: any //-----------fetched
   [key: string]: any
 }
@@ -22,8 +23,15 @@ const guideSlice = createSlice({
       state.loading = false
       state.fetch_data = action.payload
     },
+    setSelect(state: stateType, action: dispatchType) {
+      state.select = action.payload
+    },
   },
 })
 //*-----------------------------------------
 export default guideSlice.reducer
-export const {setFetch} = guideSlice.actions
+export const {setSelect, setFetch} = guideSlice.actions
+//*----------------------------------------- const
+export const GUIDE = {
+  SELECT: 'SELECT',
+}

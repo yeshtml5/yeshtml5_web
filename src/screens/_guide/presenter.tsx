@@ -3,33 +3,49 @@
  * @description
  */
 import React from 'react'
-import {Link} from 'react-router-dom'
+import styled from 'styled-components'
 import {useSelector} from 'react-redux'
 import {stateType} from 'store/type'
 import {Main} from 'components/layout'
+// contents
+import {Header} from './common'
+import {GUIDE} from 'store/modules/_guide'
+import {Events} from 'lib/events'
 
 export default function Presenter() {
   // hooks
   const {fetch_data} = useSelector((state: stateType) => state.guide)
-
   return (
     <Main>
+      {/* header */}
+      <Header />
       <div className="App">
         {/* {debug(fetched)} */}
         {fetch_data?.map((item: any, index: number) => {
           return (
-            <div className="item" style={{marginBottom: 10, color: 'black'}} key={`${item}_${index}`}>
-              <span>{index}</span>
-              <span>{item?.title}</span>
-            </div>
+            <Item
+              className="item"
+              key={`${item}_${index}`}
+              onClick={() => {
+                Events.emit(GUIDE.SELECT, index)
+              }}>
+              <span className="number">{index}</span>
+              <span className="title">{item?.title}</span>
+            </Item>
           )
         })}
-        <p>
-          <code>src/App.tsx</code> and save to reload.
-        </p>
-        <Link to="/test">test</Link>
-        <p className=".test">dzfkldsfljdsjl</p>
       </div>
     </Main>
   )
 }
+// * --------------------------------------------------*
+const Item = styled.div`
+  padding: 5px 10px;
+  font-size: 12px;
+  border-bottom: 1px solid #111;
+  .number {
+    padding: 10px 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+`
