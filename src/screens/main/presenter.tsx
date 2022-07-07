@@ -5,15 +5,10 @@
  */
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {useSelector, useDispatch} from 'react-redux'
-import {debug} from 'lib'
-import {stateType} from 'store/type'
 import {Main} from 'components/layout'
 
 export default function Presenter() {
   // hooks
-  const {data} = useSelector((state: stateType) => state.history)
-  const dispatch = useDispatch()
   // Icon
   // hooks
   return (
