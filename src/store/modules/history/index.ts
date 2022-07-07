@@ -1,7 +1,7 @@
 // historyStore.ts
 
-import {createSlice} from '@reduxjs/toolkit'
-import {dispatchType, stateType} from 'store/type'
+import { createSlice } from '@reduxjs/toolkit'
+import { dispatchType, stateType } from 'store/type'
 
 // state 타입 지정
 interface State {
@@ -38,4 +38,4 @@ const historySlice = createSlice({
 })
 //*-----------------------------------------
 export default historySlice.reducer
-export const {setTitle, setData} = historySlice.actions
+export const {  setTitle, setData } = historySlice.actions
