@@ -1,16 +1,17 @@
- # 설정
- ```
- // install
- npx create-react-app yeshtml5_web --template typescript
+# 설정
 
- // eslint
- npm install -D eslint
- ```
+```
+// install
+npx create-react-app yeshtml5_web --template typescript
 
+// eslint
+npm install -D eslint
+```
 
- # Modules
- ```
- // 스타일링
+# Modules
+
+```
+// 스타일링
 yarn add react-router-dom
 yarn add -D eslint
 yarn add node-sass
@@ -21,14 +22,14 @@ npm install eslint --save-dev
 // Redux Toolkit
 yarn add @reduxjs/toolkit
 yarn add redux react-redux redux-devtools-extension redux-logger
- ```
+```
 
- # ESLINT
- ```
- // ESLint 설정
- npx eslint --init
- npm i -D eslint-config-airbnb
- npm i -D eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-prettier eslint-config-prettier
+# ESLINT
+
+```
+// ESLint 설정
+// https://kimdabin.tistory.com/entry/Reactjs-ESLint%EC%99%80-Prettier%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-React-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95-VSCode
+npx eslint --init
 
 ✔ How would you like to use ESLint? · problems
 ✔ What type of modules does your project use? · esm
@@ -38,9 +39,10 @@ yarn add redux react-redux redux-devtools-extension redux-logger
 ✔ What format do you want your config file to be in? · JavaScript
 ✔ Would you like to install them now? · No / Yes
 ✔ Which package manager do you want to use? · yarn
- ```
+```
 
 # styled-components
+
 ```
 yarn add styled-components
 yarn add -D @types/styled-components
