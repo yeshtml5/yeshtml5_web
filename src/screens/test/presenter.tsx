@@ -5,14 +5,15 @@
  */
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {Main} from 'components/layout'
 
 export default function Presenter() {
   // Icon
   // hooks
   return (
-    <div className="App">
+    <Main>
       <Link to="/">HOME</Link>
-    </div>
+    </Main>
   )
 }
 /**
