@@ -20,7 +20,7 @@ export default function GNB({children}: Props) {
     <Content active={isCheck}>
       <button
         onClick={() => {
-          setIsCheck((val) => !val)
+          setIsCheck(val => !val)
         }}>
         배경색토글
       </button>
@@ -47,5 +47,5 @@ npx eslint --init
  */
 const Content = styled.div<any>`
   width: 200px;
-  background-color: ${(props) => (props.active ? 'green' : 'grey')};
+  background-color: ${props => (props.active ? 'green' : 'grey')};
 `
